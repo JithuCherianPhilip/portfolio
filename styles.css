@@ -18,10 +18,39 @@ header{
   color: black;
   font-family: 'Inter', sans-serif;
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 .title{
   font-style: inherit;
   font-size: 24px;
+}
+
+/* navbar */
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-style:inherit;
+  
+  
+}
+
+.nav-bar a{
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.nav-bar a:hover{
+  color: #f33;
+
+}
+.menu-icon {
+  width: 30px;
+  height: 15px;
+  display: flex;
+  transform: translateY(7px);
 }
 
 main {
@@ -39,7 +68,6 @@ main {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  cursor:pointer;
 }
 
 main p {
@@ -73,13 +101,106 @@ footer a:hover{
   display: block;
 }
 
+.menu-selector{
+  font-family: 'Inter', sans-serif;
+  margin:20px;
+  margin-top:40px;
+}
+
+.menu-head{
+  margin-top:20px;
+  font-size: 20px;
+}
+
+.interest-pool {
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;   
+
+
+}
+
+.topic{
+  font-size: 50px;
+  margin: 10px;
+  transition: color 0.3s ease;
+  /* font-size 0.3s ease; */
+  cursor: pointer;
+}
+
+.topic:hover{
+  /* font-size: 85px; */
+  color: #f33;
+}
+
+.dot-separator{
+  background-color: #f33;
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  transform: translateY(11px);
+  margin: 5px;
+}
+
+.sub-label{
+  font-size: 20px;
+  font-style: inherit;
+}
+.comm-box {
+  margin: 40px 20px;
+  padding: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #222;
+  border-left: 4px solid #f33;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+.follow-up {
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #555;
+}
+
+.follow-up a {
+  color: #f33;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.follow-up a:hover {
+  color: #d22;
+}
+
+
+
 @media (max-width: 600px) {
   .for-mobile{
     display: block;
   }
   
   .for-desktop{
-    display: none;
+    display: none;  
+  }
+
+   .topic {
+    font-size: 30px;
+  }
+
+  /* .topic:hover {
+    font-size: 50px;
+  } */
+
+  .dot-separator {
+    width: 8px;
+    height: 8px;
+       
   }
   
 }
