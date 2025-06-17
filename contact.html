@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header&footer.css">
-    <link rel="stylesheet" href="commonStyle.css">
-    <!-- space mono,  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="header&footer.css"/>
+  <link rel="stylesheet" href="commonStyle.css"/>
+  <link rel="stylesheet" href="navBar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Jithu Cherian Philip</title>
 </head>
 <body>
-    <header>
+  <header>
+    <a href="index.html" class="title">Jithu Cherian Philip</a>
+    <div class="nav-bar for-desktop">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="menu-icon for-mobile">
+      <!-- SVG icon -->
+      <svg width="100%" height="100%" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+        <rect width="16" height="1" y="1" fill="#333"/>
+        <rect width="16" height="1" y="4" fill="#333"/>
+      </svg>
+    </div>
+  </header>
 
-        <a href="index.html" class="title">Jithu Cherian Philip</a>
+  <main>
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="https://www.instagram.com/jithu.cherian.philip/" target="_blank">Instagram @jithu.cherian.philip</a>
+      <a href="mailto:jithu.c.philip@gmail.com">jithu.c.philip@gmail.com</a>
+    </div>
+  </main>
 
-        <div class="nav-bar for-desktop">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <footer>
+    <a href="index.html">Jithu Cherian Philip</a>
+    <a href="https://www.instagram.com/jithu.cherian.philip/" class="for-desktop">Instagram @jithu.cherian.philip</a>
+    <a href="https://www.instagram.com/jithu.cherian.philip/" class="for-mobile">Instagram</a>
+  </footer>
 
-          <div class="menu-icon for-mobile">
-    <!-- Embedded SVG -->
-    <svg width="100%" height="100%" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-        <g transform="matrix(1,0,0,1,-1568,-60)">
-            <g transform="matrix(0.113982,0,0,0.345091,-117.211,49.003)">
-                <g transform="matrix(1,0,0,1,-17.5467,0)">
-                    <g transform="matrix(5.39897,0,0,1.93186,6407.06,-35.7479)">
-                        <rect x="1555" y="35" width="26" height="3" style="fill:rgb(50,50,50);"/>
-                    </g>
-                    <g transform="matrix(5.39897,0,0,1.93186,6407.06,-18.3612)">
-                        <rect x="1555" y="35" width="26" height="3" style="fill:rgb(50,50,50);"/>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </svg>
-  </div>
+  <script src="navBar.js"></script>
 
-    </header>
-    <main>
+  <style>
+    main {
+      background-color: #cfc7c7;
+      padding: 20px;
+      margin: 15px;
+      min-height: 60vh;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      font-family: "Space Mono", monospace;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+      font-weight: 400;
+    }
 
-    </main>
+    main h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
 
-    <footer>
-        <a href="index.html">Jithu Cherian Philip</a>
-        <a href="https://www.instagram.com/jithu.cherian.philip/"class="for-desktop">Instagram @jithu.cherian.philip</a>
-        <a href="https://www.instagram.com/jithu.cherian.philip/" class="for-mobile">Instagram</a>
-    </footer>
+    .contact-links {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
 
-    <style>
-        main{
-            background-color:#cfc7c7 ;
-            padding: 20px;
-            margin: 15px;
-            min-height: 60vh;
-            height: auto;
-            color:white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            font-family: "Space Mono", monospace;
-            font-weight: 400;
-            font-style: normal;
-        }   
-    </style>
+    .contact-links a {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .contact-links a:hover {
+      color: #f33;
+    }
+  </style>
 </body>
-</html>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

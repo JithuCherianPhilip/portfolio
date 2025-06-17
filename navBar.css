@@ -1,0 +1,77 @@
+
+@media (max-width: 600px) {
+  .for-mobile{
+    display: block;
+  }
+  
+  .for-desktop{
+    display: none;  
+  }
+
+  .nav-screen {
+    background-color: #f33;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push top and bottom content apart */
+    padding: 20px;
+    font-style:'Inter', sans-serif;
+  }
+
+  .nav-title{
+    font-family: "Mono", monospace;
+    font-size:20px
+  }
+
+  /* Top bar with name and close */
+  .nav-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-head .title {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-head .close-nav {
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Centered nav links */
+  .nav-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Use up vertical space */
+    gap: 10px;
+  }
+
+  .nav-child a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .nav-child a:nth-child(1) {
+    font-size: 32px; /* About */
+  }
+
+  .nav-child a:nth-child(2) {
+    font-size: 22px; /* Contact */
+  }
+
+  
+}
